@@ -1,0 +1,4 @@
+#Clases
+En este módulo reside la jerarquía del **árbol de escenas y nodos**. Inspirada en la arquitectura compositiva de Godot, esta estructura proporciona bloques funcionales prediseñados y reutilizables para componer entidades complejas de forma rápida.
+
+La diferencia fundamental radica en la modularidad del enlazador: durante la compilación final, el binario solo incorpora las clases de los nodos utilizados en el proyecto (y sus respectivas clases base en la cadena de herencia). Este enfoque elimina el código muerto (_dead code elimination_), reduce de forma drástica el tamaño del ejecutable y optimiza la velocidad del ciclo de vida (`process`, `input`, `draw`) en videojuegos y simulaciones.
